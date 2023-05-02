@@ -1,0 +1,44 @@
+.imagE{
+    width:250px;
+    height:200px;
+   position:absolute;
+}
+.cards:hover{
+    border:0.3px solid gray
+}
+h5{
+    color:var(--brand-color);
+    padding-top:20px;
+
+}
+
+.imageCover{
+
+    background:linear-gradient(rgba(0, 0, 0, 0.408),black);
+   
+    width:250px;
+    height:200px;
+    position:relative;
+    
+
+}
+.imageCover:hover{
+    background:linear-gradient(rgba(0, 0, 0, 0.223),rgba(0, 0, 0, 0.98));
+    
+}
+.pra{
+    width:230px;;
+    text-align: center;
+
+
+}
+.fdiv{
+
+    
+   padding-top:20px;
+   border-radius:50px;
+    
+}
+.haah{
+    background-color:rgba(0, 0, 0, 0.17)
+}

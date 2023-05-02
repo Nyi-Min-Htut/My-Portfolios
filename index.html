@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./fontawesome/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+    <style>
+        .cutter{
+            height:200px;
+            width:100%;
+            background-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <!-- navigation -->
+    <div class="container mt-3 navcontainer">
+        <div  data-aos="fade-down-left" data-aos-duration="1000" >
+            <img src="./Photos/arcticons_letter-lowercase-n.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <a class="navItem" data-aos="fade-down-right" data-aos-duration="1000" href="#landing">Home</a>
+            <a  class="navItem" data-aos="fade-down-right" data-aos-duration="2000"  href="#profile">Profile</a>
+            <a  class="navItem" data-aos="fade-down-right" data-aos-duration="2000"  href="#skillbar">Skills</a>
+            <a  class="navItem" data-aos="fade-down-right" data-aos-duration="2000"  href="#service">Service</a>
+
+
+            <a  class="navItem" data-aos="fade-down-right" data-aos-duration="3000" href="#portfolio">Portfolio</a>
+            <a  class="navItem" data-aos="fade-down-right" data-aos-duration="3000"  href="#contact">Contact</a>
+    
+        </div>
+        <div class="drop-menu-button">
+            <i class="fa-solid fa-bars" onclick="dropdownmenuOpen()"></i>
+        </div>
+        
+            <div class="nav-mobile-menu container" data-aos="fade-right" data-aos-duration="1000" v-if="showModal">
+            <div>
+              <a href="#landing" onclick="mobilelanding()">Home</a>
+            </div>
+            <div>
+              <a href="#profile">Profile</a>
+            </div>
+            <div>
+              <a href="#skillbar">Skillbar</a>
+            </div>
+            <div>
+              <a href="#service">Service</a>
+            </div>
+            <div>
+              <a href="#portfolio">Portfolio</a>
+            </div>
+            <div>
+              <a href="#contact">Contact</a>
+            </div>
+
+           
+            <div @click="showModal=!showModal">
+                
+                <i class="fa-solid fa-xmark" onclick="dropdownmenuClose()"></i></div>
+    
+      
+        </div>
+      </div>
+    <!-- landing -->
+    <div class="row mx-auto container mt-5 mt-lg-5" id="landing">
+        <div class="firstLanding   col-12   col-lg-5 text-md-center" data-aos="fade-right">
+         
+              <div  ><span class="hi ">Hi </span>
+              <div class="name ">My Name is   <div class="brandColor nyi"> Nyi Min Htut</div></div>
+              <div class="">
+              
+                    <div>I'm professional <span class="brandColor">Web developer</span></div>
+                    <div class="brandColor">UI/UX designer</div>
+                    <p class="text-muted small mt-3">You can also see my profile here</p >
+     
+                    <div class="brandContainer ms-md-5 ps-md-3  d-md-flex">
+                       <span class>
+                          <a href="#">
+                             <i class="fa-brands fa-facebook"></i>
+                          </a>
+                       </span>
+                       <span>
+                          <a href="#">
+                             <i class="fa-brands fa-youtube"></i>
+                          </a>
+                       </span>
+     
+                       <span>
+                          <a href="#">
+                             <i class="fa-brands fa-instagram"></i>
+                          </a>
+                       </span>
+     
+                       <span>
+                          <a href="#">
+                             <i class="fa-brands fa-github"></i>
+                          </a>
+                       </span>
+                    </div>
+              </div>
+              </div>
+          
+        </div>
+     
+        <div class="col-lg-2 mt-lg-5 text-center code" >
+           <img src="../../Photos/code_.png" alt="">
+        </div>
+        <!--  -->
+        <div class="secondLanding  col-12 col-lg-5 " data-aos="zoom-in" data-aos-duration="3000">
+           <img class="image" src="./Photos/nyiminhtut.png" alt="">
+        </div>
+       </div>
+       <div class="cutter"></div>
+       <!-- profile -->
+       <div class="container row mx-auto mb-md-5 " id="profile">
+        <h1 class="text-center col-12 col-lg-12 visit" data-aos="fade-up">Let’s Visit <span class="brandColor scott">Nyi’s</span> Profile</h1>
+        <h1 class="text-center col-12 col-lg-12 mb-4" data-aos="fade-up">Who am<span class="brandColor"> I</span> </h1>
+        <div class="firstProfile col-12 col-lg-6 mt-3" >
+            <h2 class="fs-4 texmt-muted mt-5 px-4" data-aos="fade-left">I built beatuiful <span class="brandColor">web site</span> and ultimate things</h2>
+    
+            <p class="mt-4 text-secondary profilepara px-4 pb-md-5" data-aos="fade-right">Hello, I'm Nyi Min Htut and <span class="brandColor">junior web developer</span> and <span class="brandColor">UI/UX designer</span>. I can do both front-end and backend developement. Currently I'm finding the jobs to gain my skill to be a professional software developer</p>
+        </div>
+        <!-- second profile -->
+        <div class="secondProfile col-12 col-lg-6 pt-md-5">
+          <div data-aos="fade-down-right" data-aos-duration="1500">
+            <img class="reactjs" src="./Photos/file_type_reactjs logo.png" alt="">
+    
+          </div>
+            <div  data-aos="fade-up-right" data-aos-duration="1500">
+              <img class="laravel" src="./Photos/laravel.png" alt="">
+            </div>
+            <div  data-aos="fade-down-left" data-aos-duration="1500">
+              <img class="vuejs" src="./Photos/vuejssmall.png" alt="">
+            </div>
+            <div  data-aos="fade-up-left" data-aos-duration="1500">
+              <img class="firebase" src="./Photos/firebase.png" alt="">
+            </div>
+            <div  data-aos="fade-down-left" data-aos-duration="1500">
+              <img src="./Photos/javascript.png" class="js" alt="">
+            </div>
+            
+            <img class="profilepng" src="./Photos/kisspng-software-developer-computer-software-web-developme-web-amp-mobile-app-analytics-platform-for-develo-5d32885e08fe34.5065382015635927980369.png" alt="">
+        </div>
+      </div>
+      <div class="cutter"></div>
+      <!-- whoAmI -->
+      <div class="container mt-5" id="skillbar">
+        <h1 class='text-center '>Skill of <span class="brandColor">me</span></h1>
+        <div class="skillbarContainer row mx-auto">
+            <div class="col-12 col-lg-6 firstskillbar" >
+                <div data-aos="fade-up-right">
+                    <label class="mb-2 mt-5">Javascript</label>
+                    <div class="jsskillbar"></div>
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="3000">
+                    <label class="mb-2 mt-3">Laravel</label>
+                    <div class="laravelskillbar"></div>
+                </div>
+                <div data-aos="fade-up-right" data-aos-duration="3000">
+                    <label class="mb-2 mt-3">Vue js</label>
+                    <div class="vuejsskillbar"></div>
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="3000">
+                    <label class="mb-2 mt-3">React Js</label>
+                    <div class="reactskillbar"></div>
+                </div>
+    
+    
+    
+            </div>
+            <div class="col-12 col-lg-6 secondskillbar ,mx-auto">
+                <div data-aos="fade-up-left">
+                    <label class="mb-2 mt-5">Php</label>
+                    <div class="phpskillbar"></div>
+                </div>
+                <div data-aos="fade-up-right">
+                    <label class="mb-2 mt-3">Bootstrap</label>
+                    <div class="bootskillbar"></div>
+                </div>
+                <div data-aos="fade-up-left">
+                    <label class="mb-2 mt-3">Figma</label>
+                    <div class="figmaskillbar"></div>
+                </div>
+                <div data-aos="fade-up-right">
+                    <label class="mb-2 mt-3">Python</label>
+                    <div class="pythonskillbar"></div>
+                </div>
+            </div>
+    
+        </div>
+      </div>
+      <div class="cutter"></div>
+      <!-- whatDoIDo -->
+      <div class="container " id="service">
+        <h1 class="text-center col-12 col-lg-12 mb-5" data-aos="fade-up">What do<span class="brandColor scott"> I</span> do ?</h1>
+        
+        <div class="row first my-5 haah">
+            <div class="col-12 col-md-6 col-lg-4 fdiv d-flex justify-content-center " data-aos="fade-right">
+               
+                <div class="">
+                    <img class="imagE" src="./Photos/Rectangle 67.png" alt="">
+                    <div class="imageCover"></div>
+                   <h5 class="text-center">UI/UX designer</h5>
+                   <p class="pra text-muted mt-4">I can build a strong and beautiful web site design and mobile design</p>
+           
+               </div>
+                
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 fdiv d-flex justify-content-center " data-aos="fade-left">
+    
+                <div class="">
+                    
+                    <img class="imagE" src="./Photos/keyboard.png" alt="">
+    
+                  
+                    <div class="imageCover"></div>
+                   <h5 class="text-center">Front-end Developer</h5>
+                   <p class="pra text-muted mt-4">I can build a strong and beautiful web site with the powerful frame works.</p>
+           
+               </div>
+            </div>
+            <div class="col-12 col-md-12 fdiv  col-lg-4 d-flex justify-content-center " data-aos="fade-out"> 
+                <div>
+                    <img class="imagE" src="./Photos/Rectangle 70.png" alt="">
+                    <div class="imageCover"></div>
+                   <h5 class="text-center">Backend Developer</h5>
+                   <p class="pra text-muted mt-4">I can build a strong and secure  with the most complicated and functional web site</p>
+           
+               </div>
+            </div>
+        </div>
+      
+      </div>
+      <div class="cutter"></div>
+      <!-- project -->
+      <div class="container" id="portfolio">
+        <h1 class="text-center">Here is my <span class="brandColor">some project</span></h1>
+        <div class="row projectbox" data-aos="fade-down-right">
+          <div class="row my-5">
+            <div class="col-12 col-md-12 col-lg-7 projectPhoto haha">
+            
+            <a href="#">
+              <img src="./Photos/Group 42.png" class="col-12 col-lg-8 phpProject" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 projectDetail bg-dark">
+            <h4 class="brandColor p-2">Php project </h4>
+      
+            <div class="whatuse">
+              <span>Bootstrap</span>
+              <span>Php</span>
+              <span>Css</span>
+              <span>HTML</span>
+  
+            </div>
+          </div>
+          </div>
+  
+        </div>
+        
+        <div class="row projectbox text-center" data-aos="fade-down-left">
+          <div class="row my-5 text-center">
+            <div class="col-12 col-md-12 col-lg-7 projectPhoto haha text-center">
+         <a href="#">
+          <img src="./Photos/Group 43.png" class="col-12 col-lg-8 phpProject" alt="">
+         </a>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 projectDetail bg-dark">
+            <h4 class="brandColor p-2">Laravel Project</h4>
+    
+            <div class="whatuse">
+              <span >Bootstrap</span>
+              <span >Laravel</span>
+              <span >Css</span>
+              <span >HTML</span>
+  
+            </div>
+          </div>
+          </div>
+  
+        </div>
+  
+        <div class="row projectbox" data-aos="fade-down-right">
+          <div class="row my-5">
+            <div class="col-12 col-md-12 col-lg-7 projectPhoto haha">
+              <a href="#">
+            <img src="./Photos/Group 44.png" class="col-12 col-lg-8 phpProject" alt="">
+
+              </a>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 projectDetail bg-dark">
+            <h4 class="brandColor p-2">Vuejs Project</h4>
+         
+            <div class="whatuse">
+              <span>Bootstrap</span>
+              <span>Vuejs</span>
+              <span>Css</span>
+              <span>HTML</span>
+  
+            </div>
+          </div>
+          </div>
+  
+        </div>
+        
+      </div>
+      <div class="cutter"></div>
+      <!-- contact us -->
+      <div class="container" id="contact">
+        <h1 class="text-center mb-5">So Get In Touch</h1>
+        <div class="row">
+    
+            <div class="col-12 col-lg-6 col-md-6 firstContact">
+    
+              <h6 class=" text-center brandColor" >We love to contact with you</h6 >
+                <form action="https://formsubmit.co/nyiminhtut2003@gmail.com" class="  ps-sm-5"  method="POST">
+          
+                  <input type="text" name="name" placeholder="Enter Your Name here" required>
+                  <input type="email" name="email" placeholder="Enter Your Email here" required>
+                  <textarea name="message" placeholder="Type anything here"></textarea>
+    
+                  <button type="submit">Send</button>
+                </form>
+            </div>
+    
+            <div class="col-12 col-lg-6 col-md-6 secondcontact brandColor text-center">
+              <div class="address">
+                <i class="fa-sharp fa-solid fa-location-dot"></i> 
+                <div> No.28 , South Race Course, Tamwe, Yangon</div>
+              </div>
+    
+              <div class="address"><i class="fa-solid fa-phone"></i> 09443250159</div>
+              <div class="address"><i class="fa-solid fa-envelope"></i> nyiminhtut2003@gmail.com</div>
+    
+    
+            </div>
+        </div>
+      </div>
+      <div class="cutter"></div>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+      AOS.init();
+      
+    </script>
+    <script>
+    let dropdownmenuOpen=()=>{
+        let  bars=document.querySelector(".nav-mobile-menu")
+        if(bars.style.display=="none"){
+            bars.style.display="block"
+        }else{
+            bars.style.display="none"
+        }
+    }
+    let dropdownmenuClose=()=>{
+        let  bars=document.querySelector(".nav-mobile-menu")
+        bars.style.display="none"
+        console.log('hi')
+    }
+    let mobilelanding=()=>{
+      let  bars=document.querySelector(".nav-mobile-menu")
+      bars.style.display="none"
+    }
+        
+    </script>
+</body>
+</html>

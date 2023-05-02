@@ -1,0 +1,119 @@
+.firstLanding{
+    height:400px;
+  
+    display:flex;
+ 
+    justify-content: center;
+    align-items: center;
+    padding-left:20px
+
+ }
+ 
+ .nyi{
+   font-size:50px;
+
+   animation:5s nyi infinite 
+ }
+ .scott{
+    animation:5s scott infinite 
+ }
+
+ @keyframes scott{
+    1%{transform:rotate(1deg)}
+    2%{transform:rotate(2deg)}
+    3%{transform:rotate(3deg)}
+    4%{transform:rotate(4deg)}
+    20%{transform:rotate(3deg)}
+    50%{transform:rotate(2deg)}
+    70%{transform:rotate(1deg)}
+    50%{transform:rotate(0deg)}
+
+ }
+ 
+ .name, .hi{
+    font-size:50px;
+
+ }
+ @media screen and (max-width:576px){
+    .nyi{
+        font-size: 50px;
+    }
+
+    .name, .hi{
+        font-size:40px;
+    
+     }
+ }
+ @media screen and (mix-width:985px){
+    .nyi{
+        font-size:10px
+    }
+ }
+
+ @keyframes nyi{
+    1%{transform:rotate(1deg)}
+    2%{transform:rotate(2deg)}
+    3%{transform:rotate(3deg)}
+    4%{transform:rotate(4deg)}
+    20%{transform:rotate(3deg)}
+    50%{transform:rotate(2deg)}
+    70%{transform:rotate(1deg)}
+    50%{transform:rotate(0deg)}
+
+ }
+
+ .secondLanding{
+    height:400px;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+ }
+ .image{
+    width:230px ;
+ }
+ .fa-brands{
+    color:white;
+    font-size:25px;
+    border-radius: 100px;
+    border:none;
+    transition:1s all;
+ }
+ .brandContainer{
+    display:flex;
+    flex-direction:row;
+    gap:20px
+
+ }
+ .code{
+    transition:3s;
+    animation:code 4s forwards infinite;
+    
+ }
+ @keyframes code {
+    from {
+      transform: perspective(400px) rotateY(0);
+    }
+    to {
+      transform: perspective(400px) rotateY(180deg);
+    }
+  }
+  
+.fa-facebook:hover{
+    color:blue;
+    background-color: white;
+}
+.fa-github:hover{
+    color:black;
+    background-color: white;
+}
+.fa-youtube:hover{
+    color:red;
+    background-color: white;
+    border-radius: 0px;
+}
+.fa-instagram:hover{
+    color:rgb(138, 14, 134);
+    
+}

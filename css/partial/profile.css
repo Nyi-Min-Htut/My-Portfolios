@@ -1,0 +1,119 @@
+.visit{
+    margin-bottom:200px
+}
+.firstProfile{
+   
+   
+    
+}
+.secondProfile{
+   
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilepara{
+    font-size:20px;
+    
+}
+.profilepng{
+   
+
+    width:200px;
+    position:absolute;
+   
+    
+    
+    
+}
+.reactjs{
+    position:relative;
+    z-index: 9;
+    top:20px;
+    right:50px;
+    animation:3s react infinite 
+}
+@keyframes react{
+    
+    0%{transform: rotate(360deg);}
+    20%{right:80px}
+  
+}
+.laravel{
+    position:relative;
+    z-index:9;
+    top:-100px;
+    width:30px;
+    animation:3s laravel infinite
+}
+@keyframes laravel{
+   0%{right:0px}
+    50%{right:50px}
+    100%{right:0px}
+ 
+ }
+.vuejs{
+    position:relative;
+    z-index:9;
+    width:40px;
+    top:-120px;
+    left:50px;
+    animation:3s vuejs infinite
+}
+.js{
+    width:20px;
+    position:relative;
+    left:70px;
+    animation:3s js infinite;
+    z-index: 9
+
+}
+@keyframes js{
+    /*     
+        20%{left:40px};
+        50%{left:10px}; */
+        70%{left:40px};
+    
+       
+    }
+.firebase{
+    z-index:9;
+    width:30px;
+    position:relative;
+    top:50px;
+    left:40px;
+    animation:3s firebase infinite;
+}
+@keyframes firebase{
+    70%{
+        left:80px
+    }
+}
+
+@keyframes vuejs{
+    /* 0%{left:60px}
+    0%{transform: rotate(10deg);}
+    50%{transform:rotate(-20deg)} */
+    50%{left:70px}
+    90%{left:40px}
+
+
+    100%{left:50px}
+    100%{transform:rotate(deg)}
+
+}
+
+
+
+
+@media screen and (max-width:576px){
+    .profilepng{
+        width:180px;
+        margin:0 auto;
+    }
+    .profilepara{
+        margin-bottom:100px
+    }
+    
+ }

@@ -1,0 +1,16 @@
+body{
+    background:rgb(29, 29, 29) !important; 
+    color:white;
+    background-image:url("../../../Photos/Group\ 9.png");
+    background-repeat: no-repeat;
+}
+h3{
+    color:var(--brand-color)
+}
+.brandColor{
+    color:var(--brand-color)
+ }
+ a{
+    text-decoration:none;
+    color:var(--brand-color)
+ }
