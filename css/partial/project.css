@@ -1,76 +1,19 @@
-.projectPhoto{
-    border-radius: 50px 0px 0px 50px;
-    opacity:0.7;
-    transition:1s;
-   
-
-}
-.phpProject{
-    width:100%;
-    border-radius: 50px 0px 0px 50px;
-
-
-}
-.projectDetail{
-    border-radius: 0px 50px 50px 0px;
-}
-.projectPhoto:hover  {
-    opacity: 1;
-    display:block
-  }
-.whatuse{
+.projectContainer
+{
     display:flex;
-    flex-direction: row;
-    gap:10px;
-    margin-bottom:10px
-}
-.whatuse>*{
-    padding:5px;
-    background-color:#00dbeb3b;
-    border-radius: 10px;
-    color:black;
-    
-
+    justify-content: space-between;
 }
 
-
-
-@media screen and (max-width:992px){
-    .projectPhoto{
-        border-radius: 20px 20px 0px 0px;
-    }
-    .phpProject{
-        width:100%;
-        border-radius:20px 20px 0px 0px;
-    
-    
-    }
-    .projectDetail{
-        border-radius: 0px 0px 0px 0px;
-    }
-    .projectbox{
-        width:70%;
-        margin:0 auto;
-    }
-    .whatuse{
-        
-        width:70%
-    }
-    .whatuse>*{
-        
-        font-size:13px;
-        padding:0px;
-        color:var(--brand-color);
-        background-color:rgba(0, 128, 128, 0);
-
-        
-        
-    
-    }
-    .haha{
-        cursor: pointer;
-    }
-    .secondProfile{
-       
-    }
+.project
+{
+    margin-bottom:20px;
+    text-align: center;
 }
+@media screen and (max-width: 600px) {
+    .projectImage
+    {
+        width:200px;
+        height:150px;
+        border:1px solid red;
+    }
+  }
